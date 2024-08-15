@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Home</a>
+       <a href="#">About</a>
+        <a href="#">Contact</a>
+        
+      </div>
+    <div>
+        <img src="img.png" width="100%" height="auto" alt="">
+    </div>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Mission</h2>
+        <p>
+            <ul>
+                <li>To Help the Kids around to know Codding</li>
+                <li>To help the less priviledge with my Tech Skill</li>
+            </ul>
+        </p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Vision</h2>
+        <p>
+            <ul>
+                <li>Being Able to Work abroad</li>
+                <li>Opening a massive Tech/codding school</li>
+            </ul>
+        </p>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <h2>Objectives</h2>
+        <p>
+            <ul>
+                <li>Builing a tech world</li>
+                <li>Bringing Kid to tech</li>
+            </ul>
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+        <p>&COPY; <b>Daniel Yemi-peters </b>2024</p>
+      </div>
+</body>
+</html>
